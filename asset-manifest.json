@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/%3Chttps://%7Bsanushshakya%7D.github.io/%7Bprank%7D%3E/static/css/main.30630b14.css",
+    "main.js": "/%3Chttps://%7Bsanushshakya%7D.github.io/%7Bprank%7D%3E/static/js/main.2f73d754.js",
+    "static/js/592.a8ac2374.chunk.js": "/%3Chttps://%7Bsanushshakya%7D.github.io/%7Bprank%7D%3E/static/js/592.a8ac2374.chunk.js",
+    "index.html": "/%3Chttps://%7Bsanushshakya%7D.github.io/%7Bprank%7D%3E/index.html",
+    "main.30630b14.css.map": "/%3Chttps://%7Bsanushshakya%7D.github.io/%7Bprank%7D%3E/static/css/main.30630b14.css.map",
+    "main.2f73d754.js.map": "/%3Chttps://%7Bsanushshakya%7D.github.io/%7Bprank%7D%3E/static/js/main.2f73d754.js.map",
+    "592.a8ac2374.chunk.js.map": "/%3Chttps://%7Bsanushshakya%7D.github.io/%7Bprank%7D%3E/static/js/592.a8ac2374.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30630b14.css",
+    "static/js/main.2f73d754.js"
+  ]
+}
