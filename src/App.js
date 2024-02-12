@@ -7,8 +7,12 @@ const App = () => {
 
   const handleNoButtonHover = () => {
     setNoButtonHovered(true);
-    const top = Math.random() * (window.innerHeight - 50); // Adjusted to prevent button from going out of viewport
-    const left = Math.random() * (window.innerWidth - 100); // Adjusted to prevent button from going out of viewport
+    const buttonWidth = 800; // Adjust as needed
+    const buttonHeight = 500; // Adjust as needed
+    const maxTop = window.innerHeight - buttonHeight;
+    const maxLeft = window.innerWidth - buttonWidth;
+    const top = Math.random() * maxTop;
+    const left = Math.random() * maxLeft;
     setNoButtonPosition({ top, left });
   };
 
@@ -16,16 +20,23 @@ const App = () => {
     setNoButtonHovered(false);
   };
 
+  const handleYes = () => {
+    alert('Thank You Bachha !!!')
+  }
+
   return (
     <div className="prank-buttons">
-      <p>Do you want to click the "Yes" button?</p>
+      <img src='https://img.freepik.com/free-vector/cute-valentines-day-background_23-2148043323.jpg?w=1800&t=st=1707754773~exp=1707755373~hmac=d7ae08ab6c6c5594845c821c58e0f42c1807eab1d469f26825703553c723bed8' alt="Background" />
+      <div className='overlay'></div>
+    
       <div className="button-container">
-        <button className="yes-button">Yes</button>
+        <p>Hey Bachha, will you be my valentine ?</p>
+        <button className="yes-button" onClick={handleYes}>Yes</button>
         <button
           className={`no-button ${noButtonHovered ? 'floating' : ''}`}
           onMouseEnter={handleNoButtonHover}
           onMouseLeave={handleNoButtonLeave}
-          style={{ top: noButtonPosition.top, left: noButtonPosition.left }}
+          style={{ top: noButtonPosition.top + 'px', left: noButtonPosition.left + 'px', position: 'fixed' }}
         >
           No
         </button>
